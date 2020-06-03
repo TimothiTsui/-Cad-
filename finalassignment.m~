@@ -90,7 +90,7 @@ for n=1:5
     title(['当K=',num2str(K(n)),'时，系统单位阶跃响应曲线']);
     
     %求系统阶跃响应的性能指标
-    [mp(n),ess(n),ts(n)]=magicfun(sys_close(n));
+    [mp(n),ess(n),ts(n)]=magicfun(y);
     str=['当K=',num2str(K(n)),'时，系统超调量：',num2str(mp(n)),',稳态误差为：',num2str(ess(n)),',过渡过程时间为：',num2str(ts(n))];
     disp(str);
 
